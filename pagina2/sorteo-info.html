@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>informacion</title>
+    <link rel="stylesheet" href="CSS/info-sorteo.css">
+    <link rel="stylesheet" href="CSS/normalize.css">
+</head>
+<body>
+   <header class="hero">
+      <section class="hero__container">
+         <div class="boton_inicio" tabindex="0" href="pagina1/index.html#muestratitulo_inicio">
+            <a class="boton_inicio" href="index.html">
+                <div class="linea_titulo"></div>
+                   <div class="hero__texts">
+                      <h1 class="hero__title">MUESTRA</h1>
+                      <h3 class="hero__subtitle">2022</h3>
+                      <h2 class="hero__title2">ANUAL</h2>
+                   </div>
+            </a>
+         </div>
+      </section>
+         <nav class="menu_burguer1">
+            <div id="menu_pc">
+               <a href="mispuntos.html" class="nav__items">MI PERFIL</a>
+               <a href="stands.html" class="nav__items nav__items--cta">STANDS</a>
+               <a href="#ir_a_staff" class="nav__items">STAFF</a>
+               <a href=".historia-muestras" class="nav__items">MUESTRA</a>
+               <a href="mas-informacion.html" class="nav__items">SORTEO INFO</a>
+               <a href="redes.html" class="nav__items">REDES</a>
+            </div>
+            <div id="menu_cel">
+               <div id="burguer">
+                     <span class="line1"></span>
+                     <span class="line2"></span>
+                     <span class="line3"></span>
+               </div>
+               <div class="menu_hamburguesa">
+                  <a href="miperfil.html" class="nav__items">MI PERFIL</a>
+                  <a href="stands.html" class="nav__items nav__items--cta">STANDS</a>
+                  <a href="historia-muestras" class="nav__items">MUESTRA</a>
+                  <a href="mas-informacion.html" class="nav__items">SORTEO INFO</a>
+                  <a href="#STAFF" class="nav__items">STAFF</a>
+                  <a href="redes.html" class="nav__items">REDES</a>
+               </div>
+            </div>
+
+         </nav>
+      </div>
+      <br><br><br><br><br><br><br><br><br>
+   </header>
+   <main>
+      <section class="fondo_card">
+            <div class="card">
+               <div class="card-details">
+                 <p class="text-title">¿DE QUE TRATA EL SORTEO?</p>
+                 <p class="text-body">El sorteo de una picada donada por el TOURING con el nombre de Batch Cassidy tomara como referencia aquellas personas con mayor puntaje en los Stands. Para sumar estos puntos y participar del sorteo solo es necesario ir a la seccion de STANDS y recorrer cada uno en busca de informacion para poder responer bien sus preguntas. </p>
+               </div>
+               <form action="stands.html"><button class="card-button">Ir a Stands</button></form>
+            </div>
+      </section>
+   </main>
+</body>
+
+
+<!-- SCRPIPTS -->
+
+<script src="https://kit.fontawesome.com/b9607edb8a.js" crossorigin="anonymous"></script>
+<script>
+   const burguer = document.querySelector('#burguer');
+   const menu = document.querySelector('#menu_cel div:nth-child(2)');
+   burguer.addEventListener('click', e=>{
+         burguer.classList.toggle('active');
+         menu.classList.toggle('open');
+   });
+</script>
+</html>

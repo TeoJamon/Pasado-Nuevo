@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>MUESTRA ANUAL</title>
+   <link rel="stylesheet" href="CSS/normalize.css">
+   <link rel="stylesheet" href="CSS/styles.css">
+   <link rel="icon" href="Imagenes/Segundo IMA sin juntar capas.jpg">
+
+</head>
+<body>
+   <header class="hero">
+      <section class="hero__container">
+         <div class="boton_inicio" tabindex="0" href="pagina1/index.html#">
+               <div class="linea_titulo"></div>
+               <div class="hero__texts">
+                  <h1 class="hero__title" id="muestratitulo_inicio">MUESTRA</h1>
+                  <h3 class="hero__subtitle">2022</h3>
+                  <h2 class="hero__title2">ANUAL</h2>
+               </div>
+         </div>
+            <div class="margen"></div>
+      </section>
+         <nav class="menu_burguer1">
+            <div id="menu_pc">
+               <a href="mispuntos.html" class="nav__items">MI PERFIL</a>
+               <a href="stands.html" class="nav__items nav__items--cta">STANDS</a>
+               <a href="#ir_a_staff" class="nav__items">STAFF</a>
+               <a href=".historia-muestras" class="nav__items">MUESTRA</a>
+               <a href="sorteo-info.html" class="nav__items">SORTEO INFO</a>
+               <a href="redes.html" class="nav__items">REDES</a>
+            </div>
+            <div id="menu_cel">
+               <div id="burguer">
+                     <span class="line1"></span>
+                     <span class="line2"></span>
+                     <span class="line3"></span>
+               </div>
+               <div class="menu_hamburguesa">
+                  <a href="miperfil.html" class="nav__items">MI PERFIL</a>
+                  <a href="stands.html" class="nav__items nav__items--cta">STANDS</a>
+                  <a href="historia-muestras" class="nav__items">MUESTRA</a>
+                  <a href="sorteo-info.html" class="nav__items">SORTEO INFO</a>
+                  <a href="#STAFF" class="nav__items">STAFF</a>
+                  <a href="redes.html" class="nav__items">REDES</a>
+               </div>
+            </div>
+
+         </nav>
+      </div>
+      <br><br><br><br><br><br><br><br><br>
+   </header>
+
+      <main>
+         <section class="fondo_card">
+               <div class="card">
+                  <div class="card-details">
+                    <p class="text-title">PARTICIPÁ</p>
+                    <p class="text-body">Responde encuestas, gana monedas y participa por una picada en el TOURING</p>
+                  </div>
+                  <form action="stands.html"><button class="card-button">Ir a Stands</button></form>
+               </div>
+         </section>
+      </main>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br> 
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+      <div class="barra_divisoria"></div>
+   <section class="pagina_baja">
+    <section class="staff_info">
+        <span class="ir_a_staff"></span>
+           <div id="STAFF" class="staff_info_title">
+           STAFF</div>
+            <div class="staff_info_body">
+               El Staff es un grupo coordinador de la muestra, ellos estaran distinguidos con un pañuelo color rosado.</div>
+                  <br><br><br>
+               <div class="staff_info_body_img">
+                  <img class="teo_img" src="imagenes/Teo.jpeg" alt="Teo">
+                     <div class="nombres_img">Teo Saladino</div>
+                  <img class="pucho_img" src="imagenes/Pucho.jpeg" alt="Pucho">
+                     <div class="nombres_img">Ivan Lago</div>
+                  <img class="jose_img" src="imagenes/Josefina.jpeg" alt="Josefina">
+                     <div class="nombres_img">Josefina Lopez</div>
+                  <img class="rocio_img" src="imagenes/Rocio.jpeg" alt="Rocio">
+                     <div class="nombres_img">Rocio Corvera</div>
+                  <img class="lola_img" src="imagenes/Lola.jpeg" alt="Lola">
+                     <div class="nombres_img">Lola Aguilar</div>
+                  <img class="valentina_img" src="imagenes/Valentina.jpeg" alt="Valentina">
+                     <div class="nombres_img">Valentina Coronel</div>
+               </div>
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+           <br> 
+           <br>
+           <br>
+           <br>         
+
+    </section>
+     <section class="Muestra_section">
+            <div class="muestra_historia_title">MUESTRA</div>
+           <div class="muestra_historia_title2">
+             RECORRIDO POR LAS MUESTRAS</div>
+          <div class="muestra_historia_body"></div>
+          <div>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident harum recusandae possimus molestias. At, ipsum! Veritatis asperiores recusandae aspernatur sunt amet quam suscipit animi quae nihil ad! Ab, tempora hic.</p>
+          </div>
+      </section>
+   </section>
+
+
+   <script src="https://kit.fontawesome.com/b9607edb8a.js" crossorigin="anonymous"></script>
+   <script>
+      const burguer = document.querySelector('#burguer');
+      const menu = document.querySelector('#menu_cel div:nth-child(2)');
+      burguer.addEventListener('click', e=>{
+            burguer.classList.toggle('active');
+            menu.classList.toggle('open');
+      });
+   </script>
+   <footer>
+      <conteiner class="footer">
+         <p class="copy">&copy;MuestraAnual2022</p>
+               <div class="iconos">
+                  <span class="footer_container_icons">
+                     <a class="fab fa-brands fa-tiktok footer_icon" href="https://www.tiktok.com/@imatwch"></a>
+                  </span>
+                  <span class="footer_container_icons">
+                     <a class="fab fa-brands fa-instagram footer_icon" href="https://www.instagram.com/imatwch/"></a>
+                  </span>
+               </div>
+      </conteiner>
+</body>
+</html>
