@@ -98,9 +98,19 @@ button {
     text-transform: uppercase;
     font-size: 10px;
     letter-spacing: 2px;
+    
 }
 
 button:hover {
     background-color: #000;
     color: white;
 }
+
+.boton_inicio{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 40px 0 40px 0;
+    text-decoration: none;
+    }
