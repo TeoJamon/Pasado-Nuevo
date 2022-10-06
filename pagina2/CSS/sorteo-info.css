@@ -2,33 +2,22 @@
 /*------------FUENTES TRANAJADAS*/
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;600;900&display=swap');
-
-/* ---------------BODY */
-
+    
+/*----------BODY */
     body{
     font-family: 'Raleway', sans-serif;
-    background-image:  linear-gradient(
-        rgba(0, 0, 0, 0.253),
-        rgba(0, 0, 0, 0.253)),url("../Imagenes/Censo_03Port.jpg");
-    background-attachment: fixed;
-    background-size: auto;
+    background-color: rgb(226, 204, 162)
     }
+/* ---------------CABEZA DE PAGINA */
 
-/* ---------------HERO */
-
-    header{
-        width: 100%;
-    }
-    
     .hero{
-        background-image: linear-gradient(
-            rgba(0, 0, 0, 0.39),
-            rgba(0, 0, 0, 0.39));
-        background-repeat: repeat;
-        background-size: auto;
+        background-image:  linear-gradient(
+            rgba(0, 0, 0, 0.253),
+            rgba(0, 0, 0, 0.253)),url("../Imagenes/Censo2.jpg");
         display: flex;
-        position: auto;
-        align-items: stretch;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
        }
 
        .hero__title{
@@ -87,6 +76,7 @@
     text-align: center;
     align-items: center;
     cursor: pointer;
+    text-decoration: none;
     margin: 40px 0 40px 0;
     }
 
@@ -94,7 +84,7 @@
 
     #menu_pc{
         display: none;
-        margin-right: 10px;
+        margin-right: 1px;
        }
 
     #menu_cel{
@@ -105,7 +95,6 @@
     @media (min-width: 576px){
         #menu_pc{
             display: flex;
-            margin-right: 10px;
         }
 
         #menu_cel{
@@ -140,7 +129,7 @@
         background-color: rgb(255, 255, 255);
         width: 100%;
         height: 2px;
-        transition: all 300ms;
+        transition: all 200ms ease-out;
         transform-origin: left;
     }
 
@@ -162,7 +151,7 @@
         position: absolute;
         display: flex;
         flex-direction: column;
-        background-color:  #e0943d;
+        background-color: rgb(116, 97, 72);
         align-items: center;
         justify-content: space-around;
         right: 0px;
@@ -177,19 +166,21 @@
         width: 420px;
     }
 
+
     .nav__items{
         text-align: center;
-        font-size: 25px;
+        font-size: 30px;
         font-family: 'Titillium Web', sans-serif;
         font-weight: lighter;
         color: rgb(255, 255, 255);
-        margin: auto;
         margin-right: 30px;
         text-shadow: 0 0 20px rgb(255, 255, 255);
         text-decoration: none;
 
     }
 
+
+/* ---------------CUERPO DE PAGINA */
 
 
 
@@ -201,19 +192,19 @@
     }
 
     .card {
-        width: 300px;
+        width: 80%;
         height: 500px;
-        border-radius: 30px;
+        border-radius: 10px;
         background-image: url(".../Imagenes/1.png");
-        background-color: rgb(236, 236, 236);
+        background-color: rgba(116, 97, 72, 0.959);
         position: relative;
         padding: 1.8rem;
         transition: 0.5s ease-out;
         overflow: visible;
         margin: auto;
         margin-top: 50px;
-        box-shadow: 10px 10px 10px #ff990071,
-        -1px -1px 30px #ff990071;
+        box-shadow: 20px 20px 20px #00000071,
+        -1px -1px 30px #00000071;
        }
 
        .fondo_card{
@@ -221,31 +212,17 @@
         }
 
        .card-details {
-        color: rgb(212, 130, 62);
+        color: rgb(0, 0, 0);
         height: 100%;
         gap: .5em;
         display: grid;
         place-content: center;
        }
 
-       .card-button {
-        transform: translate(-50%, 125%);
-        width: 60%;
-        border-radius: 6rem;
-        border: none;
-        background-color: #ff9900c2;
-        color: #fff;
-        font-size: 3ex;
-        padding: .5rem 1rem;
-        position: absolute;
-        left: 50%;
-        bottom: 0;
-        opacity: 50;
-        transition: 0.3s ease-out;
-       }
+
 
        .text-body {
-        color: rgb(134, 134, 134);
+        color: rgb(255, 255, 255);
         text-align: center;
         font-size: 5ex;
         font-family: 'Titillium Web', sans-serif;
@@ -258,19 +235,16 @@
         font-size: 3em;
         font-weight: bold;
         text-align: center;
-        color:  #ff7b00c2;
+        color:  #ffffff;
        }
 
        /*Hover*/
        .card:hover {
-        border-color:  #ff9900c2;
-        box-shadow: 0px 5px 20px 14px  #ff9900c2;
+        border-color:  #000000c2;
+        box-shadow: 0px 5px 20px 14px  #000000c2;
        }
 
-       .card:hover .card-button {
-        transform: translate(-50%, 50%);
-        opacity: 1;
-       }
+
 
 
     /* ----------------PARTE STAFF */
@@ -286,7 +260,7 @@
         margin-left: 10px;
         margin-right: 10px;
         text-shadow: 0 0 20px rgb(255, 255, 255);
-        background-color: rgba(0, 0, 0, 0.342);
+        background-color: rgba(116, 97, 72, 0.959);
         border-radius: 50px;
     }
 
@@ -301,7 +275,7 @@
         margin-right: 40px;
         margin-top: 20px;
         text-shadow: 0 0 20px rgb(255, 255, 255);
-        background-color: rgba(0, 0, 0, 0.342);
+        background-color: rgba(116, 97, 72, 0.959);
         border-radius: 20px;
     }
     .staff_info_body_img{
