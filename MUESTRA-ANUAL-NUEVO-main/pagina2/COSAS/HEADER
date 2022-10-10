@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>MUESTRA ANUAL</title>
+   <link rel="stylesheet" href="CSS/normalize.css">
+   <link rel="stylesheet" href="CSS/styles.css">
+   <link rel="icon" href="Imagenes/Segundo IMA sin juntar capas.jpg">
+
+</head>
+<body>
+   <header class="hero">
+      <section class="hero__container">
+         <div class="boton_inicio" tabindex="0" href="pagina1/index.html#">
+               <div class="linea_titulo"></div>
+               <div class="hero__texts">
+                  <h1 class="hero__title" id="muestratitulo_inicio">MUESTRA</h1>
+                  <h3 class="hero__subtitle">2022</h3>
+                  <h2 class="hero__title2">ANUAL</h2>
+               </div>
+         </div>
+            <div class="margen"></div>
+      </section>
+         <nav class="menu_burguer1">
+            <div id="menu_pc">
+               <a href="mispuntos.html" class="nav__items">MI PERFIL</a>
+               <a href="stands.html" class="nav__items nav__items--cta">STANDS</a>
+               <a href="#ir_a_staff" class="nav__items">STAFF</a>
+               <a href=".historia-muestras" class="nav__items">MUESTRA</a>
+               <a href="mas-informacion.html" class="nav__items">SORTEO INFO</a>
+               <a href="redes.html" class="nav__items">REDES</a>
+            </div>
+            <div id="menu_cel">
+               <div id="burguer">
+                     <span class="line1"></span>
+                     <span class="line2"></span>
+                     <span class="line3"></span>
+               </div>
+               <div class="menu_hamburguesa">
+                  <a href="miperfil.html" class="nav__items">MI PERFIL</a>
+                  <a href="stands.html" class="nav__items nav__items--cta">STANDS</a>
+                  <a href="historia-muestras" class="nav__items">MUESTRA</a>
+                  <a href="mas-informacion.html" class="nav__items">SORTEO INFO</a>
+                  <a href="#STAFF" class="nav__items">STAFF</a>
+                  <a href="redes.html" class="nav__items">REDES</a>
+               </div>
+            </div>
+
+         </nav>
+      <br><br><br><br><br><br><br><br><br>
+   </header>

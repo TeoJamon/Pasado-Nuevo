@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;600;900&display=swap');
+
+.hero{
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.39),
+        rgba(0, 0, 0, 0.39)), url(../Imagenes/Censo_04Port.jpg);
+    background-repeat: repeat;
+    background-size: auto;
+    display: flex;
+    position: auto;
+    align-items: stretch;
+   }
+
+   .hero__title{
+    font-size: 60px;
+    font-weight: bold;
+    color:aliceblue;
+    margin: 0 0 0 30px;
+   }
+
+   .hero__title2{
+    font-size: 60px;
+    font-weight: bold;
+    color:aliceblue;
+    margin: 0 0 0 100px;
+   }
+
+   .linea_titulo{
+    width: 15px;
+    height: 200px;
+    background:aliceblue;
+    margin: 50px 0px 50px 10px;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+   }
+
+   .hero__subtitle{
+    letter-spacing: 30px;
+    font-size: 2em;
+    color: aliceblue;
+    margin: 0 0 0 60px;
+   }
+
+   .hero__texts{
+    text-shadow: 0 0 20px rgb(255, 255, 255);
+   }
+
+.container{
+    display: flex;
+    background-attachment: fixed;
+    position: relative;
+    align-items:stretch;
+    max-width: 1400px;
+    margin: auto;
+   }
+
+   .hero__container{
+        display: flex;
+        align-items: center;
+        max-width: 1400px;
+        
+   }
+   .contenedor__header{
+    display: flex;
+    margin: auto;
+   }
+
+/* --------------PARTE MUESTRA ANUAL TITULO */
+
+.link  {
+text-decoration: none;
+color: aliceblue;
+
+}
+
+/*---------------menu hamburguesa*/
+
+#menu_pc{
+    display: none;
+    margin-right: 10px;
+   }
+
+#menu_cel{
+    display: flex;
+}
+
+@media (min-width: 576px){
+    #menu_pc{
+        display: flex;
+        margin-right: 10px;
+    }
+
+    #menu_cel{
+        display: none;
+    }
+}
+
+
+
+.menu_burguer1 {
+    position: top;      
+}
+
+#burguer {
+    min-width: 20px;
+    min-height: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    gap: .30rem;
+    width: 3rem;
+    height: 3rem;
+    margin-top: 10px;
+}
+
+#burguer span{
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 2px;
+    transition: all 300ms;
+    transform-origin: left;
+}
+
+/*___activa*/
+#burguer.active .line1{
+    transform: rotate(45deg);
+}
+#burguer.active .line2{
+    opacity: 0;
+}
+#burguer.active .line3{
+    transform: rotate(-45deg);
+}
+
+/*___menu desplegable*/
+
+#menu_cel div:nth-child(2){
+    overflow: hidden;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color:  #41182d;
+    align-items: center;
+    justify-content: space-around;
+    right: 0px;
+    width: 0px;
+    margin-top: 60px;
+    transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+}
+
+#menu_cel div.open:nth-child(2){
+    height: 240px;
+    width: 420px;
+}
+
+.nav__items{
+    text-align: center;
+    font-size: 3ex;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
+    margin-right: 0,0,0,30px;
+    text-shadow: 0 0 20px rgb(255, 255, 255);
+    text-decoration: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------FOOTERRRRR */
+.footer{
+    display: flex;
+    margin-top: 0%;
+    gap: 1px;
+    background-color: #41182d;
+    width: 100%;
+    height: 150px;
+    display: grid;
+    grid-template-rows: 40px 100px;
+    align-items: center;
+
+    }
+
+    .iconos{
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+    margin-top: 1px;
+    }
+
+    .footer_container_icons{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin-top: 5px;
+
+    }
+
+    .footer_icon{
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+
+    }
+
+    .fab.footer_icon{
+    line-height: 60px;
+    }
+
+    .copy{
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: lighter;
+    font-size: 3ex;
+    color: white;
+    margin: auto ;
+    align-items: center;  
+    }
