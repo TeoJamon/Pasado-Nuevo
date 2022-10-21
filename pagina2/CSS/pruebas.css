@@ -2,6 +2,7 @@
 /*------------FUENTES TRANAJADAS*/
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;600;900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
 
 /* ---------------BODY */
 
@@ -15,12 +16,18 @@
     }
 
 /* ---------------HERO */
+	.header{
+		width: 100%;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.39),
+            rgba(0, 0, 0, 0.39));
+        background-repeat: repeat;
+        background-size: auto;
+        display: flex;
+        position: auto;
+        align-items: stretch;
+	}
 
-   header {
-        width: 100%;
-   }
-    
-    
     .hero{
         background-image: linear-gradient(
             rgba(0, 0, 0, 0.39),
@@ -30,59 +37,226 @@
         display: flex;
         position: auto;
         align-items: stretch;
-       }
+    }
 
-       .hero__title{
+
+    .hero__title{
         font-size: 60px;
         font-weight: bold;
         color:aliceblue;
         margin: 0 0 0 30px;
-       }
+    }
 
-       .hero__title2{
+    .hero__title2{
         font-size: 60px;
         font-weight: bold;
         color:aliceblue;
         margin: 0 0 0 100px;
-       }
+    }
 
-       .linea_titulo{
+    .linea_titulo{
         width: 15px;
         height: 200px;
         background:aliceblue;
         margin: 50px 0px 50px 10px;
         box-shadow: 0 0 10px rgb(255, 255, 255);
-       }
+    }
 
-       .hero__subtitle{
+    .hero__subtitle{
         letter-spacing: 30px;
         font-size: 2em;
         color: aliceblue;
         margin: 0 0 0 60px;
-       }
+    }
 
-       .hero__texts{
+    .hero__texts{
+        text-shadow: 0 0 10px rgb(255, 255, 255);
+    }
+
+    .contenedor__header{
+        display: flex;
+    }
+
+    .hero__container{
+        display: flex;
+        align-items: center;
+        max-width: 1400px;           
+   }
+
+	.container{
+		width: 90%;
+		max-width: 1200px;
+		margin-top: 0;
+	}
+	.container .btn-menu, .logo{
+		float: right;
+        position: top;
+	}
+	.container .btn-menu label{
+		color: #fff;
+		font-size: 70px;
+		cursor: pointer;
+        position: top;
+	}
+
+    .btn-menu{
+        margin: auto;
+        position: absolute;
+        text-shadow: 0 0 10px rgb(255, 255, 255);
+    }
+	.logo h1{
+		color: #fff;
+		font-weight: 400;
+		font-size: 22px;
+		margin-left: 10px;
+	}
+	.container .menu{
+		float: right;
+		line-height: 100px;
+	}
+	.container .menu a{
+        position: absolute;
+		display: inline-block;
+		padding: 15px;
+		line-height: normal;
+		text-decoration: none;
+		color: #fff;
+		transition: all 0.3s ease;
+		border-bottom: 2px solid transparent;
+		font-size: 15px;
+		margin-right: 5px;
+	}
+	.container .menu a:hover{
+		border-bottom: 2px solid #c7c7c7;
+		padding-bottom: 5px;
+	}
+	/*Fin de Estilos para el encabezado*/
+
+	/*Menù lateral*/
+	#btn-menu{
+		display: none;
+        margin-top: 10px;
+	}
+	.container-menu{
+		position: absolute;
+        z-index: 100;
+        position: fixed;
+		background: rgba(0,0,0,0.5);
+		width: 100%;
+		height: 100vh;
+		top: 0;left: 0;
+		transition: all 500ms ease;
+		opacity: 0;
+		visibility: hidden;
+	}
+	#btn-menu:checked ~ .container-menu{
+		opacity: 1;
+		visibility: visible;
+	}
+	.cont-menu{
+        position: absolute;
+        margin-top: 0;
+        z-index: 100;
+		width: 100%;
+		max-width: 250px;
+		background: #1c1c1c;
+		height: 100vh;
+		transition: all 600ms ease;
+		transform: translateX(-100%);
+	}
+	#btn-menu:checked ~ .container-menu .cont-menu{
+		transform: translateX(0%);
+	}
+	.cont-menu nav{
+		transform: translateY(15%);
+	}
+	.cont-menu nav a{
+		display: block;
+		text-decoration: none;
+		padding: 20px;
+		color: #c7c7c7;
+		border-left: 5px solid transparent;
+		transition: all 400ms ease;
+	}
+	.cont-menu nav a:hover{
+		border-left: 5px solid #c7c7c7;
+		background: #1f1f1f;
+	}
+	.cont-menu label{
+		position: absolute;
+		right: 5px;
+		top: 10px;
+		color: #fff;
+		cursor: pointer;
+		font-size: 35px;
+	}
+    .nav__items{
+        text-align: left;
+        font-size: 3ex;
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: lighter;
+        color: rgb(255, 255, 255);
         text-shadow: 0 0 20px rgb(255, 255, 255);
-       }
+        text-decoration: none;
+    }
 
-    .container{
+    .menu_general{
+        position: top;
+    }
+    .items__menu{
+        margin-top: 0;
+    }
+    
+    .redes__menu{
         display: flex;
-        background-attachment: fixed;
-        position: relative;
-        align-items:stretch;
-        max-width: 1400px;
-        margin: auto;
-       }
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 
-       .hero__container{
-            display: flex;
-            align-items: center;
-            max-width: 1400px;           
-       }
-       .contenedor__header{
-        display: flex;
-        margin: auto;
-       }
+    .redes__menu > div{
+        width: 50%;
+        display: flex;      
+        justify-content: center;             
+        align-items: center;
+    }
+
+    .menu_container_icons{
+        background-color: rgba(255, 255, 255, 0.795);
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        color: rgba(53, 43, 43, 0.705);
+        text-align: center;
+        border: 1px solid  #da9351;
+        border-radius: 50%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: flex;      
+        justify-content: center;             
+        align-items: center;
+        }
+    
+        .menu_icon{
+        color: black;
+        font-size: 25px;
+        text-decoration: none;
+        text-align: center;
+        display: flex;      
+        justify-content: center;             
+        align-items: center;
+        }
+    
+        .fab.menu_icon{
+        line-height: 10px;
+        }
+
+        .redes_menu{
+            font-size: 1.2em;
+            color: #FFF;
+            line-height: 70px;
+        }
+
+	/*Fin de Menù lateral*/
 
 /* --------------PARTE MUESTRA ANUAL TITULO */
 
@@ -91,117 +265,6 @@
     color: aliceblue;
 
 }
-
-/*---------------menu hamburguesa*/
-
-    #menu_pc{
-        display: none;
-        margin-top: 7px; 
-       }
-
-    #menu_cel{
-        display: flex;
-    }
-
-    @media (min-width: 576px){
-        #menu_pc{
-            display: flex;
-            margin-right: 10px;
-        }
-
-        #menu_cel{
-            display: none;
-        }
-    }
-
-
-
-    .menu_burguer1 {
-        position: top;   
-    }
-
-    #burguer {
-        min-width: 20px;
-        min-height: 15px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        cursor: pointer;
-        gap: .30rem;
-        width: 3rem;
-        height: 3rem;
-        margin-top: 10px;
-    }
-
-    #burguer span{
-        border-radius: 5px;
-        background-color: rgb(255, 255, 255);
-        width: 100%;
-        height: 2px;
-        transition: all 300ms;
-        transform-origin: left;
-    }
-
-    /*___activa*/
-    #burguer.active .line1{
-        transform: rotate(45deg);
-    }
-    #burguer.active .line2{
-        opacity: 0;
-    }
-    #burguer.active .line3{
-        transform: rotate(-45deg);
-    }
-
-    /*___menu desplegable*/
-
-    #menu_cel div:nth-child(2){
-        overflow: hidden;
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        background-color:  #e0943d;
-        align-items: center;
-        justify-content: space-around;
-        right: 0px;
-        width: 0px;
-        margin-top: 60px;
-        transition: all 300ms ease-out;
-        transition: all 300ms ease-out;
-    }
-
-    #menu_cel div.open:nth-child(2){
-        height: 240px;
-        width: 420px;
-    }
-
-    .nav__items{
-        text-align: center;
-        font-size: 3ex;
-        font-family: 'Titillium Web', sans-serif;
-        font-weight: lighter;
-        color: rgb(255, 255, 255);
-        text-shadow: 0 0 20px rgb(255, 255, 255);
-        text-decoration: none;
-
-    }
-
-    .nav__itemspc{
-        text-align: center;
-        font-size: 3ex;
-        font-family: 'Titillium Web', sans-serif;
-        font-weight: lighter;
-        color: rgb(255, 255, 255);
-        margin-right: 45px;
-        text-shadow: 0 0 20px rgb(255, 255, 255);
-        text-decoration: none;
-    
-    }
-    
-
-
-
 
     /*----------------------PARTE CARD */
     .card {
