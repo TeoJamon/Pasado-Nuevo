@@ -197,9 +197,17 @@
         text-decoration: none;
     
     }
+/*---------- STANDS */
+
+.container_title_stands{
+    display: flex;
+}
 
 
-
+#icon-search{
+    text-decoration-color: black;
+    align-items: right;
+}
 
 
     /*-----------------FOOTERRRRR */

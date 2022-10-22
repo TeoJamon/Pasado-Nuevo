@@ -15,6 +15,10 @@
     background-size: auto;
     }
 
+
+    nav{
+        height: 350px;
+    }
 /* ---------------HERO */
 	.header{
 		width: 100%;
@@ -134,7 +138,7 @@
 
 	/*Menù lateral*/
 	#btn-menu{
-		display: none;
+		display: flex;
         margin-top: 10px;
 	}
 	.container-menu{
@@ -158,7 +162,7 @@
         margin-top: 0;
         z-index: 100;
 		width: 100%;
-		max-width: 250px;
+		max-width: 290px;
 		background: #1c1c1c;
 		height: 100vh;
 		transition: all 600ms ease;
@@ -195,7 +199,7 @@
         font-size: 3ex;
         font-family: 'Titillium Web', sans-serif;
         font-weight: lighter;
-        color: rgb(255, 255, 255);
+        color: #FFF;
         text-shadow: 0 0 20px rgb(255, 255, 255);
         text-decoration: none;
     }
@@ -205,6 +209,7 @@
     }
     .items__menu{
         margin-top: 0;
+        margin-bottom: 30px;
     }
     
     .redes__menu{
@@ -214,10 +219,10 @@
     }
 
     .redes__menu > div{
-        width: 50%;
+        width: 40%;
         display: flex;      
-        justify-content: center;             
-        align-items: center;
+        justify-content: left;             
+        align-items: left;
     }
 
     .menu_container_icons{
@@ -233,21 +238,22 @@
         margin-bottom: 10px;
         display: flex;      
         justify-content: center;             
-        align-items: center;
+        margin-left: 20px;
         }
     
         .menu_icon{
-        color: black;
+        color: rgb(27, 25, 25);
         font-size: 25px;
         text-decoration: none;
         text-align: center;
         display: flex;      
         justify-content: center;             
         align-items: center;
+        position: absolute;
         }
     
         .fab.menu_icon{
-        line-height: 10px;
+            line-height: 2px;
         }
 
         .redes_menu{
