@@ -140,7 +140,9 @@
 	#btn-menu{
 		display: flex;
         margin-top: 10px;
+        visibility: hidden;
 	}
+
 	.container-menu{
 		position: absolute;
         z-index: 100;
@@ -178,7 +180,7 @@
 		display: block;
 		text-decoration: none;
 		padding: 20px;
-		color: #c7c7c7;
+		color: #fff;
 		border-left: 5px solid transparent;
 		transition: all 400ms ease;
 	}
@@ -194,6 +196,9 @@
 		cursor: pointer;
 		font-size: 35px;
 	}
+    .menu_icon::before {
+        margin-right: 4px;
+    }
     .nav__items{
         text-align: left;
         font-size: 3ex;
@@ -232,7 +237,7 @@
         height: 40px;
         color: rgba(53, 43, 43, 0.705);
         text-align: center;
-        border: 1px solid  #da9351;
+        border: 1px solid  rgba(255, 255, 255, 0.795);
         border-radius: 50%;
         margin-top: 10px;
         margin-bottom: 10px;
@@ -249,11 +254,10 @@
         display: flex;      
         justify-content: center;             
         align-items: center;
-        position: absolute;
         }
     
         .fab.menu_icon{
-            line-height: 2px;
+            line-height: 0px;
         }
 
         .redes_menu{
