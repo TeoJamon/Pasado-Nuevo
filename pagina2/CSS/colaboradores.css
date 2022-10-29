@@ -259,15 +259,24 @@
 /*Fin de Menù lateral*/
 /* -------------MAIN */
 
+.link{
+    text-decoration: none;
+    color: #fff;
+}
+
+.container_titulo_colaboradores{
+    margin: 10px 10px 10px 10px;
+}
 .titulo_colaboradores{
     margin-top: 50px;
     font-size: 2em;
     text-align: center;
     font-family: 'Titillium Web', sans-serif;
     font-weight: lighter;
-    color: #ffffff;
+    color: #47c2d8;
     text-shadow: 0 0 20px rgb(255, 255, 255);
-    background-color: #99b82a;
+    background-color: rgba(226, 223, 223, 0.815);
+
 }
 
 /* ---------CARD */

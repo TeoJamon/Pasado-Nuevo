@@ -11,13 +11,18 @@
     }
 
 /* ---------------HERO */
+nav{
+    height: 350px;
+}
+
+
 .header{
     width: 100%;
     background-image: linear-gradient(
-        rgba(0, 0, 0, 0.39),
-        rgba(0, 0, 0, 0.39));
-    background-repeat: repeat;
-    background-size: auto;
+        rgba(0, 0, 0, 0.219),
+        rgba(0, 0, 0, 0.212)), url("../Imagenes/fondonuevo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     position: auto;
     align-items: stretch;
@@ -66,10 +71,12 @@
 
 .hero__texts{
     text-shadow: 0 0 10px rgb(255, 255, 255);
+    text-decoration: none;
 }
 
 .contenedor__header{
     display: flex;
+    
 }
 
 .hero__container{
@@ -125,6 +132,88 @@
     border-bottom: 2px solid #c7c7c7;
     padding-bottom: 5px;
 }
+.link{
+    color: #fff;
+    text-decoration: none;
+}
+
+/* BUSCADOR */
+
+#ctn-icon-search{
+    position: absolute;
+    right: 20px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#ctn-icon-search i{
+    font-size: 18px;
+    color: #777777;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+#ctn-icon-search i:hover{
+    color: rgb(51, 132, 209);
+}
+
+
+#ctn-bars-search{
+    position: fixed;
+    top: 340px;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    z-index: 9;
+}
+
+#ctn-bars-search input{
+    display: block;
+    width: 20em;
+    margin: auto;
+    padding: 10px;
+    font-size: 18px;
+    outline: 0;
+}
+
+#box-search{
+    position: fixed;
+    top: 425px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 22em;
+    background-color: #dadada;
+    z-index: 8;
+    overflow: hidden;
+}
+
+#box-search li a{
+    display: block;
+    width: 22em;
+    color: #413c3c;
+    padding: 12px 20px;
+}
+
+#box-search li a:hover{
+    background: #c0c0c0;
+}
+
+#box-search li a i{
+    margin-right: 10px;
+    color: gray;
+}
+
+
+#cover-ctn-search{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    background-color: rgba(5, 5, 5, 0.502);
+    z-index: 7;
+}
+
 /*Fin de Estilos para el encabezado*/
 
 /*Menù lateral*/
@@ -133,6 +222,7 @@
     margin-top: 10px;
     visibility: hidden;
 }
+
 
 .container-menu{
     position: absolute;
@@ -156,7 +246,7 @@
     z-index: 100;
     width: 100%;
     max-width: 290px;
-    background: #1c1c1c;
+    background-color: rgb(34, 31, 31);
     height: 100vh;
     transition: all 600ms ease;
     transform: translateX(-100%);
@@ -262,6 +352,9 @@
 
 .container_title_stands{
     display: flex;
+    position: relative;
+    box-shadow: 0 4px 25px -22px black;
+    z-index: 10;
 }
 
 
@@ -269,6 +362,69 @@
     text-decoration-color: black;
     align-items: right;
 }
+
+
+.container{
+   position: relative;
+   margin: auto;
+}
+
+/* ----------- */
+
+details {
+	font-size: 1rem;
+	margin: 1em auto;
+	box-shadow: 10px 20px 25px 15px rgba(0, 0, 0, 0.1),
+		0 10px 10px -5px rgba(0, 0, 0, 0.04);
+	width: 100%;
+	background: #ffffff;
+	border-radius: 8px;
+	position: relative;
+	width: auto;
+}
+
+	.summary-title{
+		user-select: none;
+	}
+
+	summary:hover {
+		cursor: pointer;
+	}
+
+	.summary-content {
+		border-top: 1px solid #e2e8f0;
+		cursor: default;
+		padding: 1em;
+		font-weight: 300;
+		line-height: 1.5;
+	}
+
+	summary{
+		list-style: none;
+		padding: 1em;
+    }
+
+		summary:hover .summary-chevron-up svg {
+			opacity: 1;
+		}
+
+	.summary-chevron-up svg {
+		opacity: 0.5;
+	}
+
+	.summary-chevron-up,
+	.summary-chevron-down {
+		pointer-events: none;
+		position: absolute;
+		top: 0.75em;
+		right: 1em;
+		background: #ffffff;
+    }
+
+	summary::-webkit-details-marker {
+		display: none;
+	}
+
 
 
     /*-----------------FOOTERRRRR */

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="CSS/normalize.css">
     <link rel="icon" href="Imagenes/Segundo IMA sin juntar capas.jpg">
     <script src="https://kit.fontawesome.com/b9607edb8a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="js/busqueda.js">
 
 
     <header class="header">
@@ -32,7 +33,7 @@
               <div class="cont-menu">
                   <nav>
                           <div class="items__menu">
-                              <a href="stands.html" class="nav__items">STANDS</a>                
+                              <a href="index.html" class="nav__items">PAGINA PRINCIPAL</a>                
                               <a href="sorteo-info.html" class="nav__items">SORTEO INFO</a>
                               <a href="colaboradores.html" class="nav__items">COLABORADORES</a>
                           </div>
@@ -73,7 +74,7 @@
                               <div class="google_menu redes_menu">PAGINA</div>
                       </div>
                   </nav>
-                  <label for="btn-menu">✖️</label>
+                  <label for="btn-menu" id="btn-menu-cruz">✖️</label>
               </div>     
           </div>
       </div>
@@ -82,54 +83,227 @@
 
    <div class="container_title_stands">
       <p>STANDS DE LA MUESTRA</p>
+
       <div id="ctn-icon-search">
          <i class="fa-solid fa-magnifying-glass" id="icon-search"></i>
       </div>
    </div>
 
+   <div id="ctn-bars-search">
+      <input type="text" id="inputSearch" placeholder="¿Que Stand estas buscando?">
+   </div>
+
+   <ul id="box-search">
+      <li><a href=""><i class="fa-solid fa-magnifying-glass"></i>Cafecito</a></li>
+      <li><a href=""><i class="fa-solid fa-magnifying-glass"></i>Wilsons</a></li>
+      <li><a href=""><i class="fa-solid fa-magnifying-glass"></i>Proyectos Solidarios</a></li>
+      <li><a href=""><i class="fa-solid fa-magnifying-glass"></i>Muebles Reciclables</a></li>
+      <li><a href=""><i class="fa-solid fa-magnifying-glass"></i>Escultura y Modelaje</a></li>
+
+   </ul>
+
+   <div id="cover-ctn-search"></div>
+
  <h2>Planta Baja</h2>
-<details>
-    <summary>Wilsons</summary>
-</details>
-<details>
-   <summary>Escultura y Modelaje</summary>
-</details>
-<details>
-   <summary>Taller Manipulacion de Alimentos</summary>
-</details>
-<details>
-   <summary>Trabajos Pastoral</summary>
-</details>
-<details>
-   <summary>Ex Alumnas</summary>
-</details>
-<details>
-   <summary>Energia Nueclear</summary>
-</details>
-<details>
-   <summary>Preguntados</summary>
-</details>
-<details>
-   <summary>Fotografia</summary>
-</details>
-<details>
-   <summary>Guion</summary>
-</details>
-<details>
-   <summary>Arte</summary>
-</details>
-<details>
-   <summary>Biblioteca A. Alvarez</summary>
-</details>
-<details>
-   <summary>Jardin y salita de 3</summary>
-</details>
-<details>
-   <summary>Dia de la tradicion</summary>
-</details>
-<details>
-   <summary>Ana Frank</summary>
-</details>
+<div class="container">
+   <details>
+      <summary>
+         <span class="summary-title">Wilsons</span>
+         <div class="summary-chevron-up">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+         </div>
+      </summary>
+   
+      <div class="summary-content">Give me attention or face the wrath of my claws give me attention or face the wrath of my claws and pretend not to be evil cats go for world domination allways wanting food. Eat owner's food playing with balls of wool and meow and walk away, and bleghbleghvomit
+         my furball really tie the room together. Cuddle no cuddle cuddle love scratch scratch cat</div>
+      <div class="summary-chevron-down">
+         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up"><polyline points="18 15 12 9 6 15"></polyline></svg>
+         
+   </details>
+   <details>
+      <summary>
+         <span class="summary-title">Details element with custom arrow!</span>
+         <div class="summary-chevron-up">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+         </div>
+      </summary>
+   
+      <div class="summary-content">Give me attention or face the wrath of my claws give me attention or face the wrath of my claws and pretend not to be evil cats go for world domination allways wanting food. Eat owner's food playing with balls of wool and meow and walk away, and bleghbleghvomit
+         my furball really tie the room together. Cuddle no cuddle cuddle love scratch scratch cat</div>
+      <div class="summary-chevron-down">
+         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up"><polyline points="18 15 12 9 6 15"></polyline></svg>
+         
+   </details>
+   <details>
+      <summary>
+         <span class="summary-title">Details element with custom arrow!</span>
+         <div class="summary-chevron-up">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+         </div>
+      </summary>
+   
+      <div class="summary-content">Give me attention or face the wrath of my claws give me attention or face the wrath of my claws and pretend not to be evil cats go for world domination allways wanting food. Eat owner's food playing with balls of wool and meow and walk away, and bleghbleghvomit
+         my furball really tie the room together. Cuddle no cuddle cuddle love scratch scratch cat</div>
+      <div class="summary-chevron-down">
+         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up"><polyline points="18 15 12 9 6 15"></polyline></svg>
+         
+   </details>
+   <details>
+      <summary>
+         <span class="summary-title">Details element with custom arrow!</span>
+         <div class="summary-chevron-up">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+         </div>
+      </summary>
+   
+      <div class="summary-content">Give me attention or face the wrath of my claws give me attention or face the wrath of my claws and pretend not to be evil cats go for world domination allways wanting food. Eat owner's food playing with balls of wool and meow and walk away, and bleghbleghvomit
+         my furball really tie the room together. Cuddle no cuddle cuddle love scratch scratch cat</div>
+      <div class="summary-chevron-down">
+         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up"><polyline points="18 15 12 9 6 15"></polyline></svg>
+         
+   </details>
+   <details>
+      <summary>
+         <span class="summary-title">Details element with custom arrow!</span>
+         <div class="summary-chevron-up">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+         </div>
+      </summary>
+   
+      <div class="summary-content">Give me attention or face the wrath of my claws give me attention or face the wrath of my claws and pretend not to be evil cats go for world domination allways wanting food. Eat owner's food playing with balls of wool and meow and walk away, and bleghbleghvomit
+         my furball really tie the room together. Cuddle no cuddle cuddle love scratch scratch cat</div>
+      <div class="summary-chevron-down">
+         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up"><polyline points="18 15 12 9 6 15"></polyline></svg>
+         
+   </details>
+   <details>
+      <summary>
+         <span class="summary-title">Details element with custom arrow!</span>
+         <div class="summary-chevron-up">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+         </div>
+      </summary>
+   
+      <div class="summary-content">Give me attention or face the wrath of my claws give me attention or face the wrath of my claws and pretend not to be evil cats go for world domination allways wanting food. Eat owner's food playing with balls of wool and meow and walk away, and bleghbleghvomit
+         my furball really tie the room together. Cuddle no cuddle cuddle love scratch scratch cat</div>
+      <div class="summary-chevron-down">
+         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up"><polyline points="18 15 12 9 6 15"></polyline></svg>
+         
+   </details>
+   <details>
+      <summary>
+         <span class="summary-title">Details element with custom arrow!</span>
+         <div class="summary-chevron-up">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+         </div>
+      </summary>
+   
+      <div class="summary-content">Give me attention or face the wrath of my claws give me attention or face the wrath of my claws and pretend not to be evil cats go for world domination allways wanting food. Eat owner's food playing with balls of wool and meow and walk away, and bleghbleghvomit
+         my furball really tie the room together. Cuddle no cuddle cuddle love scratch scratch cat</div>
+      <div class="summary-chevron-down">
+         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up"><polyline points="18 15 12 9 6 15"></polyline></svg>
+         
+   </details>
+   <details>
+      <summary>
+         <span class="summary-title">Details element with custom arrow!</span>
+         <div class="summary-chevron-up">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+         </div>
+      </summary>
+   
+      <div class="summary-content">Give me attention or face the wrath of my claws give me attention or face the wrath of my claws and pretend not to be evil cats go for world domination allways wanting food. Eat owner's food playing with balls of wool and meow and walk away, and bleghbleghvomit
+         my furball really tie the room together. Cuddle no cuddle cuddle love scratch scratch cat</div>
+      <div class="summary-chevron-down">
+         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up"><polyline points="18 15 12 9 6 15"></polyline></svg>
+         
+   </details>
+   <details>
+      <summary>
+         <span class="summary-title">Details element with custom arrow!</span>
+         <div class="summary-chevron-up">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+         </div>
+      </summary>
+   
+      <div class="summary-content">Give me attention or face the wrath of my claws give me attention or face the wrath of my claws and pretend not to be evil cats go for world domination allways wanting food. Eat owner's food playing with balls of wool and meow and walk away, and bleghbleghvomit
+         my furball really tie the room together. Cuddle no cuddle cuddle love scratch scratch cat</div>
+      <div class="summary-chevron-down">
+         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up"><polyline points="18 15 12 9 6 15"></polyline></svg>
+         
+   </details>
+   <details>
+      <summary>
+         <span class="summary-title">Details element with custom arrow!</span>
+         <div class="summary-chevron-up">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+         </div>
+      </summary>
+   
+      <div class="summary-content">Give me attention or face the wrath of my claws give me attention or face the wrath of my claws and pretend not to be evil cats go for world domination allways wanting food. Eat owner's food playing with balls of wool and meow and walk away, and bleghbleghvomit
+         my furball really tie the room together. Cuddle no cuddle cuddle love scratch scratch cat</div>
+      <div class="summary-chevron-down">
+         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up"><polyline points="18 15 12 9 6 15"></polyline></svg>
+         
+   </details>
+   <details>
+      <summary>
+         <span class="summary-title">Details element with custom arrow!</span>
+         <div class="summary-chevron-up">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+         </div>
+      </summary>
+   
+      <div class="summary-content">Give me attention or face the wrath of my claws give me attention or face the wrath of my claws and pretend not to be evil cats go for world domination allways wanting food. Eat owner's food playing with balls of wool and meow and walk away, and bleghbleghvomit
+         my furball really tie the room together. Cuddle no cuddle cuddle love scratch scratch cat</div>
+      <div class="summary-chevron-down">
+         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up"><polyline points="18 15 12 9 6 15"></polyline></svg>
+         
+   </details>
+   <details>
+      <summary>
+         <span class="summary-title">Details element with custom arrow!</span>
+         <div class="summary-chevron-up">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+         </div>
+      </summary>
+   
+      <div class="summary-content">Give me attention or face the wrath of my claws give me attention or face the wrath of my claws and pretend not to be evil cats go for world domination allways wanting food. Eat owner's food playing with balls of wool and meow and walk away, and bleghbleghvomit
+         my furball really tie the room together. Cuddle no cuddle cuddle love scratch scratch cat</div>
+      <div class="summary-chevron-down">
+         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up"><polyline points="18 15 12 9 6 15"></polyline></svg>
+         
+   </details>
+   <details>
+      <summary>
+         <span class="summary-title">Details element with custom arrow!</span>
+         <div class="summary-chevron-up">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+         </div>
+      </summary>
+   
+      <div class="summary-content">Give me attention or face the wrath of my claws give me attention or face the wrath of my claws and pretend not to be evil cats go for world domination allways wanting food. Eat owner's food playing with balls of wool and meow and walk away, and bleghbleghvomit
+         my furball really tie the room together. Cuddle no cuddle cuddle love scratch scratch cat</div>
+      <div class="summary-chevron-down">
+         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up"><polyline points="18 15 12 9 6 15"></polyline></svg>
+         
+   </details>
+   <details>
+      <summary>
+         <span class="summary-title">Details element with custom arrow!</span>
+         <div class="summary-chevron-up">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+         </div>
+      </summary>
+   
+      <div class="summary-content">Give me attention or face the wrath of my claws give me attention or face the wrath of my claws and pretend not to be evil cats go for world domination allways wanting food. Eat owner's food playing with balls of wool and meow and walk away, and bleghbleghvomit
+         my furball really tie the room together. Cuddle no cuddle cuddle love scratch scratch cat</div>
+      <div class="summary-chevron-down">
+         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up"><polyline points="18 15 12 9 6 15"></polyline></svg>
+         
+   </details>
+   
+</div>
 
 
 <h2>Patio</h2>
