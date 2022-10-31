@@ -20,7 +20,7 @@ nav{
     width: 100%;
     background-image: linear-gradient(
         rgba(0, 0, 0, 0.219),
-        rgba(0, 0, 0, 0.212)), url("../Imagenes/fondonuevo.png");
+        rgba(0, 0, 0, 0.212)), url("../Imagenes/peakpx2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -82,7 +82,8 @@ nav{
 .hero__container{
     display: flex;
     align-items: center;
-    max-width: 1400px;           
+    max-width: 1400px;       
+    z-index: 100;    
 }
 
 .container{
@@ -137,7 +138,21 @@ nav{
     text-decoration: none;
 }
 
+.title_standsmuestra{
+    font-size: 1.5em;
+    margin-left: 20px;
+    color: #751a27;
+}
+
+.planta_baja{
+    font-size: 1.5em;
+    margin-left: 20px;
+    color: #751a27;
+}
+
 /* BUSCADOR */
+
+
 
 #ctn-icon-search{
     position: absolute;
@@ -148,8 +163,8 @@ nav{
     align-items: center;
 }
 #ctn-icon-search i{
-    font-size: 18px;
-    color: #777777;
+    font-size: 28px;
+    color: #751a27;
     cursor: pointer;
     transition: all 300ms;
 }
@@ -161,11 +176,12 @@ nav{
 
 #ctn-bars-search{
     position: fixed;
-    top: 340px;
+    top: -90px;
     width: 100%;
     background-color: white;
     padding: 20px;
     z-index: 9;
+    transition: all 700ms;
 }
 
 #ctn-bars-search input{
@@ -186,6 +202,8 @@ nav{
     background-color: #dadada;
     z-index: 8;
     overflow: hidden;
+    display: none;
+    
 }
 
 #box-search li a{
@@ -212,6 +230,7 @@ nav{
     left: 0;
     background-color: rgba(5, 5, 5, 0.502);
     z-index: 7;
+    display: none;
 }
 
 /*Fin de Estilos para el encabezado*/
@@ -354,7 +373,7 @@ nav{
     display: flex;
     position: relative;
     box-shadow: 0 4px 25px -22px black;
-    z-index: 10;
+    z-index: 60;
 }
 
 
