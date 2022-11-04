@@ -32,6 +32,10 @@
     align-items: stretch;
 }
 
+.link{
+    color: #fff;
+    text-decoration: none;
+}
 
 .hero__title{
     font-size: 60px;
@@ -64,6 +68,7 @@
 
 .hero__texts{
     text-shadow: 0 0 10px rgb(255, 255, 255);
+    text-decoration: none;
 }
 
 .contenedor__header{

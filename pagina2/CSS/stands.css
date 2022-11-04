@@ -95,7 +95,7 @@ nav{
     float: right;
     position: top;
 }
-.container .btn-menu label{
+.container1 .btn-menu label{
     color: #fff;
     font-size: 70px;
     cursor: pointer;
@@ -144,9 +144,10 @@ nav{
     color: #751a27;
 }
 
-.planta_baja{
+.pisos{
     font-size: 1.5em;
     margin-left: 20px;
+    margin-top: 30px;
     color: #751a27;
 }
 
@@ -162,78 +163,12 @@ nav{
     justify-content: center;
     align-items: center;
 }
+
 #ctn-icon-search i{
     font-size: 28px;
     color: #751a27;
-    cursor: pointer;
-    transition: all 300ms;
 }
 
-#ctn-icon-search i:hover{
-    color: rgb(51, 132, 209);
-}
-
-
-#ctn-bars-search{
-    position: fixed;
-    top: -90px;
-    width: 100%;
-    background-color: white;
-    padding: 20px;
-    z-index: 9;
-    transition: all 700ms;
-}
-
-#ctn-bars-search input{
-    display: block;
-    width: 20em;
-    margin: auto;
-    padding: 10px;
-    font-size: 18px;
-    outline: 0;
-}
-
-#box-search{
-    position: fixed;
-    top: 425px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 22em;
-    background-color: #dadada;
-    z-index: 8;
-    overflow: hidden;
-    display: none;
-    
-}
-
-#box-search li a{
-    display: block;
-    width: 22em;
-    color: #413c3c;
-    padding: 12px 20px;
-}
-
-#box-search li a:hover{
-    background: #c0c0c0;
-}
-
-#box-search li a i{
-    margin-right: 10px;
-    color: gray;
-}
-
-
-#cover-ctn-search{
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    left: 0;
-    background-color: rgba(5, 5, 5, 0.502);
-    z-index: 7;
-    display: none;
-}
-
-/*Fin de Estilos para el encabezado*/
 
 /*Menù lateral*/
 #btn-menu{
@@ -387,6 +322,7 @@ nav{
    position: relative;
    margin: auto;
 }
+
 
 /* ----------- */
 
