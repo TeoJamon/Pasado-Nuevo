@@ -16,11 +16,9 @@ nav{
 }
 
 
+
 .header{
     width: 100%;
-    background-image: linear-gradient(
-        rgba(0, 0, 0, 0.219),
-        rgba(0, 0, 0, 0.212)), url("../Imagenes/peakpx2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -28,10 +26,25 @@ nav{
     align-items: stretch;
 }
 
+video
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 18em;
+  object-fit: cover;
+  opacity: 1;
+  right: 0; 
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  background: #1c1c1c;
+  transition: 0.5s;
+
+}
+
 .hero{
-    background-image: linear-gradient(
-        rgba(0, 0, 0, 0.39),
-        rgba(0, 0, 0, 0.39));
     background-repeat: repeat;
     background-size: auto;
     display: flex;
@@ -82,8 +95,7 @@ nav{
 .hero__container{
     display: flex;
     align-items: center;
-    max-width: 1400px;       
-    z-index: 100;    
+    max-width: 1400px;          
 }
 
 .container{
@@ -106,6 +118,7 @@ nav{
     margin: auto;
     position: absolute;
     text-shadow: 0 0 10px rgb(255, 255, 255);
+    z-index: 20000;
 }
 .logo h1{
     color: #fff;
@@ -136,19 +149,31 @@ nav{
 .link{
     color: #fff;
     text-decoration: none;
+    position: relative;
+    z-index: 1 ;
 }
 
 .title_standsmuestra{
     font-size: 1.5em;
-    margin-left: 20px;
-    color: #751a27;
+    color: #f69101;
+    text-shadow: 0 0 10px #f6900194;
+    margin: auto;
+}
+
+.fondo_pisos{
+    background-color: #f69101;
+    background-size: cover;
+    width: 100%;
+    height: 4em;
+    line-height: 60px;
+    text-shadow: 0 0 10px rgb(255, 255, 255);
 }
 
 .pisos{
     font-size: 1.5em;
     margin-left: 20px;
     margin-top: 30px;
-    color: #751a27;
+    color: #ffffff;
 }
 
 /* BUSCADOR */
@@ -310,6 +335,7 @@ nav{
     box-shadow: 0 4px 25px -22px black;
     z-index: 60;
 }
+
 
 
 #icon-search{

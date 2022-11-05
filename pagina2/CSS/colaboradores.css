@@ -1,4 +1,5 @@
 
+
 /*------------FUENTES TRANAJADAS*/
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;600;900&display=swap');
@@ -7,14 +8,15 @@
 
     body{
     font-family: 'Raleway', sans-serif;
+    background-color: #fff;
     }
 
 /* ---------------HERO */
+
+
+
 .header{
     width: 100%;
-    background-image: linear-gradient(
-        rgba(0, 0, 0, 0.39),
-        rgba(0, 0, 0, 0.39));
     background-repeat: repeat;
     background-size: auto;
     display: flex;
@@ -22,10 +24,24 @@
     align-items: stretch;
 }
 
+#fondo-video
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 18em;
+  object-fit: cover;
+  opacity: 1;  
+  right: 0; 
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  background: #1c1c1c;
+  transition: 0.5s;
+}
+
 .hero{
-    background-image: linear-gradient(
-        rgba(0, 0, 0, 0.39),
-        rgba(0, 0, 0, 0.39));
     background-repeat: repeat;
     background-size: auto;
     display: flex;
@@ -262,21 +278,30 @@
 .link{
     text-decoration: none;
     color: #fff;
+    position: relative;
+    z-index: 1;
 }
 
 .container_titulo_colaboradores{
-    margin: 10px 10px 10px 10px;
+    margin: auto;
+    margin-bottom: 60px;
+    width: 90%;
+    
 }
 .titulo_colaboradores{
-    margin-top: 50px;
-    font-size: 2em;
+    margin-top: 0px;
+    font-size: 3.5em;
     text-align: center;
     font-family: 'Titillium Web', sans-serif;
     font-weight: lighter;
-    color: #47c2d8;
-    text-shadow: 0 0 20px rgb(255, 255, 255);
-    background-color: rgba(226, 223, 223, 0.815);
-
+    color: #607eec;
+    background-color: linear-gradient(
+        rgba(0, 0, 0, 0.219),
+        rgba(0, 0, 0, 0.212));
+    font-weight: 600;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 120px;
 }
 
 /* ---------CARD */
@@ -285,13 +310,14 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-.card {
-    width: 300px;
+.card-Sheshe {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.219),
+        rgba(0, 0, 0, 0.212)),url(../Imagenes/Sheshe.jpg);
+    width: 400px;
     height: 500px;
     border-radius: 15px;
-    background-image: url(".../Imagenes/1.png");
-    background-color: rgb(236, 236, 236);
+    background-color: rgb(220, 211, 211);
     position: relative;
     padding: 1.8rem;
     transition: 0.5s ease-out;
@@ -300,7 +326,32 @@
     margin-top: 50px;
     box-shadow: 10px 10px 10px#8f8e8ec2
     -1px -1px 30px #8f8e8ec2;
+    padding: 0px 15px 0px 15px;
+    margin-bottom: 80px;
+    background-size: cover;
+}
+
+.card {
+    width: 400px;
+    height: 500px;
+    border-radius: 15px;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.384),
+        rgba(0, 0, 0, 0.384)),url("../Imagenes/peakpx.jpg");
+    background-color: rgb(230, 211, 211);
+    position: relative;
+    padding: 1.8rem;
+    transition: 0.5s ease-out;
+    overflow: visible;
+    margin: auto;
+    margin-top: 50px;
+    box-shadow: 10px 10px 10px#8f8e8ec2
+    -1px -1px 30px #8f8e8ec2;
+    padding: 0px 15px 0px 15px;
+    margin-bottom: 80px;
    }
+
+   
 
    .fondo_card{
     background-position: center;
@@ -309,26 +360,70 @@
    .card-details {
     color: rgb(105, 104, 103);
     height: 100%;
-    gap: .5em;
+    gap: 1;
     display: grid;
     place-content: center;
    }
 
+   .text-body1 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 2.5em;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: lighter;
+    margin-bottom: 19px;
+    text-shadow: 0 0 5px #fff;
+   }
+
    .text-body {
-    color: rgb(134, 134, 134);
+    color: #ffffff;
     text-align: center;
     font-size: 5ex;
     font-family: 'Titillium Web', sans-serif;
     font-weight: lighter;
+    margin-bottom: 19px;
+    text-shadow: 0 0 5px #fff;
+   }
+
+   .text-body2 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 4ex;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: lighter;
+    margin-bottom: 19px;
+    text-shadow: 0 0 5px #fff;
    }
 
    /*Text*/
-   .text-title {
+   .text-title1 {
     font-family: 'Titillium Web', sans-serif;
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: bold;
     text-align: center;
-    color:  #94b324;
+    color:  #ffffff;
+    margin-bottom: 40px;
+    text-shadow: 0 0 5px #fff;
+   }
+
+   .text-title {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 4em;
+    font-weight: bold;
+    text-align: center;
+    color:  #ffffff;
+    margin-bottom: 50px;
+    text-shadow: 0 0 5px #fff;
+   }
+
+   .text-title2 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 5em;
+    font-weight: bold;
+    text-align: center;
+    color:  #fff;
+    margin-bottom: 50px;
+    text-shadow: 0 0 5px #fff;
    }
 
    /*Hover*/
@@ -345,7 +440,7 @@
     display: flex;
     margin-top: 20px;
     gap: 1px;
-    background-color: #869e2d;
+    background-color: #607eec;
     width: 100%;
     height: 150px;
     display: grid;
@@ -369,7 +464,7 @@
     height: 40px;
     color: #fff;
     text-align: center;
-    border: 1px solid #869e2d;
+    border: 1px solid #607eec;
     border-radius: 50%;
     margin-top: 30px;
     margin-bottom: 40px;
@@ -377,7 +472,7 @@
     }
 
     .footer_icon{
-    color:  #869e2d;
+    color:  #607eec;
     font-size: 20px;
     text-decoration: none;
 
