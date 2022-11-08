@@ -340,6 +340,7 @@ nav{
     margin: auto;
     margin-bottom: 60px;
     width: 90%;
+    text-shadow: 0 1px 3px rgba(46, 91, 175, 0.778);
     
 }
 .titulo_colaboradores{
@@ -472,7 +473,7 @@ nav{
     text-align: center;
     color:  #ffffff;
     margin-bottom: 40px;
-    text-shadow: 0 0 5px #fff;
+    text-shadow: 0 0 2px #fff;
    }
 
    .text-title {
@@ -482,7 +483,7 @@ nav{
     text-align: center;
     color:  #ffffff;
     margin-bottom: 50px;
-    text-shadow: 0 0 5px #fff;
+    text-shadow: 1px 0 2px rgba(255, 255, 255, 0.522);
    }
 
    .text-title2 {

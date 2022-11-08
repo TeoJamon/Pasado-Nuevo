@@ -154,7 +154,7 @@
         opacity: 1;
         right: 0; 
         padding: 0;
-        display: flex;
+        display: cover;
         justify-content: space-between;
         background:  linear-gradient(
             rgba(0, 0, 0, 0.411),
